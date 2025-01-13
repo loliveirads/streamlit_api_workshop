@@ -1,11 +1,14 @@
 [tool.poetry]
-name = "streamlit-api-wortkshop"
+name = "streamlit-api-workshop"
 version = "0.1.0"
-description = "Aplicação Streamlit para gestão de produtos"
+description = "Aplicação Streamlit para gerenciar produtos"
 authors = ["Luiz Fernando <luizfsoliveira.lm@gmail.com>"]
 license = "MIT"
 readme = "README.md"
-packages = [{ include = "main" }]  # Inclua o pacote principal ou desative o empacotamento
+packages = [{ include = "*" }]  # Inclui todos os arquivos e pastas do projeto
+
+# Adicionar essa configuração para evitar erros de empacotamento
+package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.12"
