@@ -8,6 +8,10 @@ API_URL = "https://api-workshop-production.up.railway.app/produtos"
 # Lista de categorias disponíveis
 CATEGORIAS = ["Eletrônicos", "Informática", "Móveis", "Outros"]
 
+try:
+    locale.setlocale(locale.LC_ALL, 'pt_BR.UTF-8')  # Define o locale para português do Brasil
+except locale.Error:
+    st.warning("O locale 'pt_BR.UTF-8' não está disponível. Usando o padrão do sistema.")
 
 def add_product(titulo, descricao, preco, disponivel, categoria):
     payload = {
