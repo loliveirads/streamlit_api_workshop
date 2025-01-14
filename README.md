@@ -61,8 +61,7 @@ Este projeto é uma aplicação frontend desenvolvida com **Streamlit** que cons
     streamlit run main.py
     ```    
 ### Estrutura do Projeto
-   ```bash
-
+    ```bash
     streamlit_api_wortkshop/
     ├── .env                # Configuração de ambiente
     ├── main.py             # Código principal da aplicação Streamlit
